@@ -9,10 +9,17 @@ console.log(firstModule.add(10,25))
 
 
 try{
-    console.log("")
+    console.log("trying to divide by 0")
     let divison_result = firstModule.divide(0,1)
     console.log(divison_result)
 
 }catch(error){
 console.log("caught an error",error.message);
 }
+
+//module wraper
+// (
+//     function(exports,require,module,__filename,__dirname){
+//         //your module code goes here
+//     }
+// )

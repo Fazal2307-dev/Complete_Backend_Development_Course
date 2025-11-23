@@ -8,7 +8,7 @@ const app = express();
 const myFirstMiddleware = (req,res,next)=>{
 console.log("this first middleware will run on every request");
 
-next();
+// next();
 }
 app.use(myFirstMiddleware);
 
